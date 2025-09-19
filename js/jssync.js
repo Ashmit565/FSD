@@ -67,7 +67,7 @@ async function f1(){
   await register();
  await sendEmail();
  await login();
- await getData();
+ await getData(); 
  await displayData();
   }
   catch (err) {
