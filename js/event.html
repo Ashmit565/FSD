@@ -5,23 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #adi {
-            border: 5px solid;
+        div {
+            background-color: aqua;
             height: 300px;
             width: 300px;
-            background-color: brown;
         }
     </style>
-</head>
-<body>
-    <div id="adi">
-        <button onclick="abes()">click</button>
-        <p id="aaa"></p>
-    </div>
+
     <script>
         function abes() {
-            document.getElementById("aaa").innerHTML = "Hello";
+            document.getElementById("aaa").innerHTML = "hello";
+        }    
+
+        function red() {
+            document.body.style.backgroundColor = "red";
+        }
+
+        function green() {
+            document.body.style.backgroundColor = "green";
+        }
+
+        function blue() {
+            document.body.style.backgroundColor = "blue";
         }
     </script>
+</head>
+
+<body>
+    <div id="aaa">
+        <button onclick="red()">RED</button>
+        <button onclick="green()">GREEN</button>
+        <button onclick="blue()">BLUE</button>
+        <button onclick="abes()">Click</button>
+    </div>
 </body>
 </html>
