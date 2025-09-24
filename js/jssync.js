@@ -1,23 +1,23 @@
-function register(){
+function login(){
    return new Promise((resolve,reject)=>{
         setTimeout(()=>{
-      console.log('register end');
+      console.log('login  sucessfully');
       resolve();
     },9000)
    })
     
     
 }
-function sendEmail(){
+function getData(){
      return new Promise((resolve,reject)=>{
         setTimeout(()=>{
-      console.log('send Email end');
+      console.log('give data');
       resolve();
     },3000)
    })
     
 }
-function login(){
+function displayData(){
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
       console.log('login end');
@@ -26,7 +26,7 @@ function login(){
    })
     
 }
-function getData(){
+function attempttext(){
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
       console.log('getData end');
@@ -34,7 +34,7 @@ function getData(){
     },1000)  
 })
 }
-function displayData(){
+function logout(){
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
       console.log('display Data end');
@@ -64,7 +64,7 @@ function displayData(){
 //           .finally(()=>{console.log('Inside Finally')})
 async function f1(){
   try {
-  await register();
+  await login();
  await sendEmail();
  await login();
  await getData(); 
